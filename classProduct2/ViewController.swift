@@ -3,7 +3,7 @@
 //  classProduct2
 //
 //  Created by Mac User on 2/9/17.
-//  Copyright © 2017 Matt. All rights reserved.
+//  Copyright © 2017 Matt. All rights reserved..
 //
 
 import UIKit
@@ -16,8 +16,8 @@ class ViewController: UIViewController {
     
     @IBAction func theButton(_ sender: Any) {
         
-        if tapCount >= 10 {
-            theLabel.text = "You tapped 10 times!"
+        if tapCount >= 20 {
+            theLabel.text = "You tapped 20 times!"
         }
         
         tapCount = tapCount + 1
