@@ -10,6 +10,23 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet var theLabel: UILabel!
+    
+    var tapCount = 0
+    
+    @IBAction func theButton(_ sender: Any) {
+        
+        if tapCount >= 10 {
+            theLabel.text = "You tapped 10 times!"
+        }
+        
+        tapCount = tapCount + 1
+        print(tapCount)
+    }
+    
+    @IBAction func pushButton2(_ sender: Any) {
+        theLabel.text = "Well daaamn!"
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
